@@ -1,0 +1,35 @@
+{
+  "name": "ndjson-2-json",
+  "version": "1.0.0",
+  "description": "convert newline-delimited JSON to a JSON array",
+  "main": "ndjson-2-json",
+  "bin": {
+    "ndjson-2-json": "./ndjson-2-json"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxlath/ndjson-2-json.git"
+  },
+  "files": [
+    "./ndjson-2-json"
+  ],
+  "keywords": [
+    "ndjson",
+    "conversion",
+    "json",
+    "jsonl",
+    "nljson"
+  ],
+  "author": "maxlath",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maxlath/ndjson-2-json/issues"
+  },
+  "homepage": "https://github.com/maxlath/ndjson-2-json#readme",
+  "dependencies": {
+    "split": "^1.0.1"
+  }
+}

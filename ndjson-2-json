@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+const split = require('split')
+
+process.stdout.write('[\n')
+
+var lastNonEmptyLine
+
+process.stdin
+.pipe(split())
+.on('data', line => {
+  if (line) {
+    if (lastNonEmptyLine) process.stdout.write('  ' + lastNonEmptyLine + ',\n')
+    lastNonEmptyLine = line
+  }
+})
+.on('close', () => {
+  process.stdout.write('  ' + lastNonEmptyLine)
+  process.stdout.write('\n]\n')
+})
