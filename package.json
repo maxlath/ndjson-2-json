@@ -1,7 +1,7 @@
 {
   "name": "ndjson-2-json",
   "version": "1.0.0",
-  "description": "convert newline-delimited JSON to a JSON array",
+  "description": "minimal CLI converter from newline-delimited JSON to a JSON array",
   "main": "ndjson-2-json",
   "bin": {
     "ndjson-2-json": "./ndjson-2-json"
