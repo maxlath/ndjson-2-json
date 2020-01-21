@@ -16,6 +16,8 @@ npm i -g ndjson-2-json
 ```sh
 # Convert all a file
 cat some.ndjson | ndjson-2-json > some.json
+# which can also be written
+ndjson-2-json < some.ndjson > some.json
 
 # Convert just the 20 first lines
 head -n 20 some.ndjson | ndjson-2-json > 20_first_entries.json
