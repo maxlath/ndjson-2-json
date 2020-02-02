@@ -4,6 +4,7 @@ Minimal CLI converter from [newline-delimited JSON](https://en.wikipedia.org/wik
 
 Features:
 * converts NDJSON to JSON
+* uses streams to be able to handle very large files with minimal memory use
 * zero validation: you have the responsability to send some proper newline-delimited JSON on `ndjson-2-json` [stdin](https://en.wikipedia.org/wiki/Standard_streams#Standard_input_(stdin))
 
 ## Install
