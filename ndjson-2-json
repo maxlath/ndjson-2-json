@@ -1,9 +1,29 @@
 #!/usr/bin/env node
+const { program } = require('commander')
+const { version, description } = require('./package.json')
 const split = require('split')
+
+program
+.version(version)
+.description(description)
+.addHelpText('after', `
+Examples:
+
+  # Convert all a file
+  cat some.ndjson | ndjson-2-json > some.json
+  # which can also be written
+  ndjson-2-json < some.ndjson > some.json
+
+  # Convert just the 20 first lines
+  head -n 20 some.ndjson | ndjson-2-json > 20_first_entries.json
+`)
+.parse(process.argv)
+
+if (process.stdin.isTTY) program.help()
 
 process.stdout.write('[')
 
-var lastNonEmptyLine
+let lastNonEmptyLine
 
 process.stdin
 .pipe(split())
