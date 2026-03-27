@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/maxlath/ndjson-2-json.git"
+    "url": "https://codeberg.org/maxlath/ndjson-2-json"
   },
   "files": [
     "./ndjson-2-json"
@@ -26,9 +26,9 @@
   "author": "maxlath",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/maxlath/ndjson-2-json/issues"
+    "url": "https://codeberg.org/maxlath/ndjson-2-json/issues"
   },
-  "homepage": "https://github.com/maxlath/ndjson-2-json#readme",
+  "homepage": "https://codeberg.org/maxlath/ndjson-2-json#readme",
   "dependencies": {
     "commander": "^7.2.0",
     "split": "^1.0.1"
